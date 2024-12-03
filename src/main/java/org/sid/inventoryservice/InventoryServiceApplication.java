@@ -23,7 +23,11 @@ public class InventoryServiceApplication {
 			Random random = new Random();
 			for (int i = 1; i < 10; i++) {
 				productRepository.saveAll(List.of(
-					Product.builder().name("Computer"+i).price(1200+Math.random()*10000,1 + random.nextInt()).build();
+					Product.builder()
+							.name("Computer"+i)
+							.price(1200+Math.random()*10000)
+							.quantity(1 + random.nextInt())
+							.build()
 				));
 			}
 		};
