@@ -28,7 +28,7 @@ public class InventoryServiceApplication {
 					Product.builder()
 							.name("Computer"+i)
 							.price(1200+Math.random()*10000)
-							.quantity(1 + random.nextInt())
+							.quantity(1 + random.nextInt(200))
 							.build()
 				));
 			}
